@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CafeOrder</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="createorder">Создать заказ</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="tea">Чай</string>
+    <string name="coffeee">Кофе</string>
+    <string name="choice_view">Выберите вид напитка</string>
+    <string name="email">Эл. почта</string>
+    <string-array name="array_tea">
+        <item>Черный чай</item>
+        <item>Зеленый чай</item>
+        <item>Красный чай</item>
+        <item>Матча</item>
+        <item>Габа</item>
+        <item>Белый чай</item>
+        <item>Кардане</item>
+        <item>Фиточай</item>
+    </string-array>
+    <string-array name="array_coffee">
+        <item>Эспрессо</item>
+        <item>Латте</item>
+        <item>Капучино</item>
+        <item>Айриш</item>
+        <item>Романо</item>
+        <item>Мокко</item>
+        <item>Макиато</item>
+        <item>Американо</item>
+    </string-array>
+</resources>

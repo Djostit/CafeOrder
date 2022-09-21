@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    tools:context=".CreateOrder">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:layout_gravity="center"/>
+    <RadioGroup
+        android:id="@+id/radios"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/tea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:text="@string/tea"
+            android:onClick="SetDrink"/>
+        <RadioButton android:id="@+id/coffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:text="@string/coffeee"
+            android:onClick="SetDrink"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/group_check">
+        <CheckBox android:id="@+id/check_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="16sp"
+            android:onClick="OneClick"/>
+        <CheckBox android:id="@+id/check_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="16sp" />
+        <CheckBox android:id="@+id/check_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="16sp"
+            android:onClick="ThreeClick"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/choice_view"
+        android:text="@string/choice_view"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:layout_gravity="center"/>
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="36sp"/>
+    <Button
+        android:id="@+id/buttonorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/createorder"
+        android:textSize="36sp"
+        android:layout_gravity="center"
+        android:onClick="OverOrder"/>
+</LinearLayout>
