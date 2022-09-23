@@ -177,6 +177,9 @@ public class CreateOrder extends AppCompatActivity {
         if (tea.isChecked()){
             if(check_one.isChecked()){
                 check_three.setEnabled(false);
+                if(check_three.isChecked()){
+                    check_three.setChecked(false);
+                }
             }
             else if(!check_one.isChecked()){
                 check_three.setEnabled(true);
@@ -188,6 +191,9 @@ public class CreateOrder extends AppCompatActivity {
         if (tea.isChecked()){
             if(check_three.isChecked()){
                 check_one.setEnabled(false);
+                if(check_one.isChecked()){
+                    check_one.setChecked(false);
+                }
             }
             else if(!check_three.isChecked()){
                 check_one.setEnabled(true);
